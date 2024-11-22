@@ -1,0 +1,238 @@
+/* global styles  */
+:root {
+    --primary-color: #0B9586;
+    --secondary-color: #FFBB1C;
+    --font: sans-serif
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.content {
+    padding: 50px 0;
+    width: 550px;
+}
+
+
+.dir-col {
+    flex-direction: column;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+
+
+.custom-button {
+    padding: 12px 34px 12px 34px;
+    gap: 10px;
+    border-radius: 109px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    letter-spacing: 0.08em;
+    text-align: left;
+    text-decoration-skip-ink: none;
+
+}
+
+.secondary-color {
+    background-color: var(--secondary-color);
+}
+
+.primary-color {
+    background-color: var(--primary-color);
+}
+
+.text-whit {
+    color: #FFF;
+}
+
+.text-black {
+    color: #FFF;
+}
+
+/* end global styles  */
+/* home and navbar styles */
+#home {
+    height: 100vh;
+    background-image: url(../images/solar-panels.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    padding: 16px;
+    background-color: var(--primary-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    font-family: var(--font);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    letter-spacing: 0.9374999403953552px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    color: #FFF;
+    cursor: pointer;
+    padding: 8px;
+    margin: 0 8px;
+    border-radius: 5px;
+    border-bottom: #00000000 solid 3px;
+
+
+}
+
+.active {
+    background-color: #0000000F;
+    border-bottom: #0000004D solid 3px;
+}
+
+nav ul li:hover {
+    background-color: #0000000F;
+    border-bottom: #0000004D solid 3px;
+}
+
+.info {
+    font-family: var(--font);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.9374999403953552px;
+    text-align: end;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFF;
+
+}
+
+.logo {
+    width: 157px;
+    height: 54px;
+    position: relative;
+}
+
+.layout {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: .6;
+}
+
+.logo-image {
+    width: 157px;
+    height: 54px;
+    opacity: .7;
+}
+
+#file {
+    margin-inline: 32px;
+}
+
+.main-text {
+    margin: 50px 0;
+}
+
+progress {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 5px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #575757;
+}
+
+progress::-webkit-progress-value {
+    background-color: white;
+}
+
+
+.number {
+    font-family: var(--font);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20.95px;
+    letter-spacing: 0.9374999403953552px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFF;
+}
+
+.main-text {
+    font-family: var(--font);
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 62.93px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    color: #FFF;
+    text-wrap: wrap;
+}
+
+.second-text {
+    font-family: var(--font);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFF;
+}
+
+/* end  home and navbar styles */
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+    nav {
+        display: none;
+    }
+}
